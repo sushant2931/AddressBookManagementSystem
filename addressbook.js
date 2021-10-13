@@ -113,6 +113,8 @@ class Contact{
     }
 }
 
+let addressBookArray = new Array();
+
 try{
     let contact = new Contact("Sushant", "Lad", "#3ac910", "Pune", "Maharashtra", "411043", "91 8830602356", "sushant@gmail.com");
     console.log(contact.toString());
@@ -120,3 +122,9 @@ try{
 catch(e){
     console.log(e);
 }
+try{
+    addressBookArray.push(new Contact("Ashwini", "Mali", "#6ac810", "Sangli", "Maharashtra", "416306", "91 9898989897", "ashwini@gmail.com"));
+}catch(e){
+    console.error(e);
+}
+console.log(addressBookArray);
